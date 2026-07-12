@@ -102,7 +102,7 @@ if not df.empty:
         with col1:
             st.metric(label=f"Total Units Consumed by {search_name}", value=f"{user_total_units:,} kWh")
         with col2:
-            st.metric(label=f"Total Bill Amount Paid", value=f"Rs. {user_total_spent:,}")
+            st.metric(label=f"Total Bill Amount", value=f"Rs. {user_total_spent:,}")
             
         st.dataframe(user_df)
     else:
